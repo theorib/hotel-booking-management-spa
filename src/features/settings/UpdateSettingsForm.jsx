@@ -17,11 +17,10 @@ function UpdateSettingsForm() {
       maxGuestsPerBooking,
       breakfastPrice,
     } = {},
-    settingsError,
   } = useSettings();
   const { updateSettings, isUpdatingSettings } = useUpdateSettings();
 
-  const { register, handleSubmit, reset, getValues, formState } = useForm();
+  const { register, formState } = useForm();
   const { errors } = formState;
 
   if (isLoadingSettings) return <Spinner />;
@@ -33,44 +32,40 @@ function UpdateSettingsForm() {
     updateSettings({ [id]: value });
   };
 
-  function onError(errors) {
-    console.error(errors);
-  }
-
   return (
     <Form>
-      <FormRow label="Minimum nights/booking">
+      <FormRow label="Minimum nights/booking" errors={errors}>
         <Input
           type="number"
           id="minBookingLength"
-          disabled={isLoadingSettings}
+          disabled={isLoadingSettings || isUpdatingSettings}
           defaultValue={minBookingLength}
           {...register('minBookingLength', { onBlur: handleUpdate })}
         />
       </FormRow>
-      <FormRow label="Maximum nights/booking">
+      <FormRow label="Maximum nights/booking" errors={errors}>
         <Input
           type="number"
           id="maxBookingLength"
-          disabled={isLoadingSettings}
+          disabled={isLoadingSettings || isUpdatingSettings}
           defaultValue={maxBookingLength}
           {...register('maxBookingLength', { onBlur: handleUpdate })}
         />
       </FormRow>
-      <FormRow label="Maximum guests/booking">
+      <FormRow label="Maximum guests/booking" errors={errors}>
         <Input
           type="number"
           id="maxGuestsPerBooking"
-          disabled={isLoadingSettings}
+          disabled={isLoadingSettings || isUpdatingSettings}
           defaultValue={maxGuestsPerBooking}
           {...register('maxGuestsPerBooking', { onBlur: handleUpdate })}
         />
       </FormRow>
-      <FormRow label="Breakfast price">
+      <FormRow label="Breakfast price" errors={errors}>
         <Input
           type="number"
           id="breakfastPrice"
-          disabled={isLoadingSettings}
+          disabled={isLoadingSettings || isUpdatingSettings}
           defaultValue={breakfastPrice}
           {...register('breakfastPrice', { onBlur: handleUpdate })}
         />

@@ -6,11 +6,8 @@ import {
 } from 'react-icons/hi2';
 import Stat from './Stat';
 import { formatCurrency } from '../../utils/helpers';
-import { useSearchParams } from 'react-router-dom';
 
 function Stats({ bookings, confirmedStays, numDays, numCabins }) {
-  const [searchParams] = useSearchParams();
-
   const numBookings = bookings.length;
 
   const sales = bookings.reduce(
