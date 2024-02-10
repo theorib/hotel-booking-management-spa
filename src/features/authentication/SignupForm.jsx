@@ -4,7 +4,7 @@ import Form from '../../ui/Form';
 import FormRow from '../../ui/FormRow';
 import Input from '../../ui/Input';
 // import { DevTool } from '@hookform/devtools';
-import useSignUp from './useSignup';
+import useSignUp from './useSignUp';
 
 // Email regex: /\S+@\S+\.\S+/
 
