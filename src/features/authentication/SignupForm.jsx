@@ -3,17 +3,16 @@ import Button from '../../ui/Button';
 import Form from '../../ui/Form';
 import FormRow from '../../ui/FormRow';
 import Input from '../../ui/Input';
-import { DevTool } from '@hookform/devtools';
+// import { DevTool } from '@hookform/devtools';
 import useSignUp from './useSignup';
 
 // Email regex: /\S+@\S+\.\S+/
 
 function SignupForm() {
-  const { signUp, isSigningUp, error } = useSignUp();
-  const { register, formState, getValues, handleSubmit, control, reset } =
-    useForm({
-      mode: 'onChange',
-    });
+  const { signUp, isSigningUp } = useSignUp();
+  const { register, formState, getValues, handleSubmit, reset } = useForm({
+    mode: 'onChange',
+  });
   const { errors } = formState;
 
   const onSubmit = function ({ email, password, fullName }) {

@@ -9,13 +9,13 @@ function useSignUp() {
     error,
   } = useMutation({
     mutationFn: signUpApi,
-    onSuccess: user => {
+    onSuccess: () => {
       toast.success(
         `Account successfully created. Please verify the new account from your user.email inbox`
       );
     },
     onError: error => {
-      //
+      console.error(error);
     },
   });
 
