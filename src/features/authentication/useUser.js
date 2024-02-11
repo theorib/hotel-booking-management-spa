@@ -2,6 +2,8 @@ import { useQuery } from '@tanstack/react-query';
 import { getCurrentUser } from '../../services/apiAuth';
 
 function useUser() {
+  // console.log('running useUser');
+
   const {
     isLoading: isLoadingUser,
     data: user,
