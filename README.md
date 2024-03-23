@@ -4,7 +4,18 @@ A React Single Page Application (SPA) that serves as a hotel (fictional) interna
 
 ## Live Demo
 
-[App live demo hosted on Vercel](https://the-wild-oasis-delta-flax.vercel.app/)
+Check the [App live demo hosted on Vercel](https://the-wild-oasis-delta-flax.vercel.app/)
+
+you can log in using the credentials below:
+
+Email address: user@user.com
+Password: 12345678
+
+When you sign in for the first time, click on **Reset and Upload ALL** on the sidebar to get fresh data on the dashboard. Creating new users is disabled for security reasons.
+
+|   ![App dashboard](/screenshots/Screenshot-1.jpg 'App dashboard')   |            ![Bookings Page](/screenshots/Screenshot-3.jpg 'Bookings Page')            |
+| :-----------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| ![Creating cabins](/screenshots/Screenshot-4.jpg 'Creating cabins') | ![Sales graph in dark mode](/screenshots/Screenshot-6.jpg 'Sales graph in dark mode') |
 
 ## App Description
 
@@ -41,7 +52,7 @@ Here are a few basic features and considerations that this app could benefit fro
 1. Ability to add and edit bookings (they currently come from a fictional api)
 2. Ability to set minimum and maximun guest per cabin
 3. Ability to set minimum and maximum nights per cabin
-4. Ability to set discounts for each booking
+4. Ability to set discounts for each booking not only per cabin
 5. List of users with ability to delete users
 6. Add Mobile styling
 7. Improve accessibility
