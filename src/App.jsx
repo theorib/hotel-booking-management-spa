@@ -10,16 +10,6 @@ import GlobalStyles from './styles/GlobalStyles';
 import SpinnerFullPage from './pages/SpinnerFullPage';
 import ProtectedRoute from './ui/ProtectedRoute';
 import AppLayout from './ui/AppLayout';
-// import Login from './pages/Login';
-// import Dashboard from './pages/Dashboard';
-// import Bookings from './pages/Bookings';
-// import Cabins from './pages/Cabins';
-// import Account from './pages/Account';
-// import Settings from './pages/Settings';
-// import Users from './pages/Users';
-// import Booking from './pages/Booking';
-// import Checkin from './pages/Checkin';
-// import PageNotFound from './pages/PageNotFound';
 
 const Login = lazy(() => import('./pages/Login'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
@@ -44,7 +34,7 @@ function App() {
   return (
     <DarkModeProvider>
       <QueryClientProvider client={queryClient}>
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         <Toaster
           position="top-center"
           gutter={12}

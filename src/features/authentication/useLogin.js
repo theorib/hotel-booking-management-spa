@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router';
 import toast from 'react-hot-toast';
 
 function useLogin() {
-  // console.log('running useLogin');
-
   const queryClient = useQueryClient();
   const navigate = useNavigate();
 
@@ -16,8 +14,7 @@ function useLogin() {
   } = useMutation({
     mutationFn: ({ email, password }) => loginApi({ email, password }),
     onSuccess: user => {
-      // console.log('running useLogin - onSuccess');
-      queryClient.setQueryData(['user'], user.user);
+      queryClient.setQueriesData(['user'], user.user);
       navigate('/dashboard', { replace: true });
     },
     onError: err => {
