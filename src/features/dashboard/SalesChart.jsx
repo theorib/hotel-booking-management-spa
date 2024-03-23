@@ -26,16 +26,6 @@ const StyledSalesChart = styled(DashboardBox)`
 function SalesChart({ bookings, numDays }) {
   const { isDarkMode } = useDarkMode();
 
-  // const data = bookings?.map(booking => {
-  //   return {
-  //     extrasSales: booking?.extrasPrice,
-  //     totalSales: booking?.totalPrice,
-  //     label: booking?.created_at,
-  //   };
-  // });
-
-  // console.log(data);
-
   const allDates = eachDayOfInterval({
     start: subDays(new Date(), numDays - 1),
     end: new Date(),

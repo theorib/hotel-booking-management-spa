@@ -1,18 +1,21 @@
-# The Wild Oasis
+# Hotel Booking Management SPA with React & Supabase
 
-[A React Single Page Application (SPA)](https://the-wild-oasis-delta-flax.vercel.app/) That serves as a hotel (fictional) internal booking management system.
+A React Single Page Application (SPA) that serves as a hotel (fictional) internal booking management system.
 
-[This is the final project for the 'The Ultimate React Course 2024: React, Redux & More' by Jonas Schmedtmann](https://www.udemy.com/course/the-ultimate-react-course/) that I completed on February 15 2024.
+## Live Demo
 
-I have written the great majority of the React code for this app, usually writting code upfront on my own and then watching the course instructions. Some react components and boilerplate as well as most of the styles for this project where provided by the course instructor [Jonas Schmedtmann](https://codingheroes.io/) and I don't claim any credit for it. The app is **_not styled for mobile_**, only desktop.
+[App live demo hosted on Vercel](https://the-wild-oasis-delta-flax.vercel.app/)
 
-This is an internal hotel booking management app that allows users (who are hotel employees) to:
+## App Description
+
+This is an internal hotel booking management app that allows users (hotel employees) to:
 
 - Create new users
 - Create, delete, check-in and check-out Bookings
 - Create, delete and update Hotel Cabins
-- Set hotel settings such as minimum nights, maximun nights, maximun guests per booking and breakfast price.
--
+- Set hotel settings such as minimum nights, maximun nights, maximun guests per booking and breakfast price
+
+## Libraries and Features
 
 This app uses the following libraries and features:
 
@@ -31,11 +34,21 @@ This app uses the following libraries and features:
 - Dashboard charts using [Recharts](https://recharts.org/en-US/)
 - Built using [Vite](https://vitejs.dev)
 
-## Forking or cloning
+## Room for improvement
 
-For this project to work, you will need to set up a Supabase project and create a `.env` file at the root of your project directory with the following content:
+Here are a few basic features and considerations that this app could benefit from. There are more features that would be great to have if this was a full featured bookings system but these are the most important ones:
 
-`SUPABASE_KEY=yourSupabaseApiKey`
-`SUPABASE_URL=yourSupabaseApiUrl`
+1. Ability to add and edit bookings (they currently come from a fictional api)
+2. Ability to set minimum and maximun guest per cabin
+3. Ability to set minimum and maximum nights per cabin
+4. Ability to set discounts for each booking
+5. List of users with ability to delete users
+6. Add Mobile styling
+7. Improve accessibility
+8. Fix contextual menus loosing their position when a user scrolls down the page
 
-Replace `yourApiKey` and `yourSupabaseApiUrl` with your own api key and url and on Supabase, you will need to create 4 tables in your Supabase project: `bookings`, `cabins`,`guests` and `settings`
+## Context
+
+This is the final project for the ['The Ultimate React Course 2024: React, Redux & More'](https://www.udemy.com/course/the-ultimate-react-course/) by [Jonas Schmedtmann](https://codingheroes.io/) completed February 2024.
+
+I wrote the great majority of the React code for this app, always writing code before watching the taught content of the module. Some React components and boilerplate, as well as most of the styles for this project were provided by the course instructor [Jonas Schmedtmann](https://codingheroes.io/). The app is **not** styled for mobile, only desktop.
