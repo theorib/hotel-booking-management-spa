@@ -1,6 +1,6 @@
 # Hotel Booking Management SPA with React & Supabase
 
-A React Single Page Application (SPA) that serves as a hotel (fictional) internal booking management system.
+A React Single Page Application that serves as a hotel (fictional) internal booking management system.
 
 ## Live Demo
 
