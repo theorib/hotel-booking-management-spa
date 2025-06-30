@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import portfinder from 'portfinder';
-import 'dotenv/config';
 
 export default defineConfig(async () => {
   // Set the base port to check for availability
@@ -18,9 +17,6 @@ export default defineConfig(async () => {
       port: port, // Set the server to use the found port
       open: true, // Automatically open the app in the browser
       // ...other server options
-    },
-    define: {
-      'process.env': process.env,
     },
     // ...other Vite configurations
   };
