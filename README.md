@@ -1,12 +1,12 @@
 # Hotel Booking Management SPA with React & Supabase
 
-A React Single Page Application (SPA) that serves as a hotel (fictional) internal booking management system.
+A React Single Page Application that serves as a hotel (fictional) internal booking management system.
 
 ## Live Demo
 
-Check the [App live demo hosted on Vercel](https://the-wild-oasis-delta-flax.vercel.app/)
+Check the [App live demo hosted on Vercel](https://hotel-booking-management-spa.vercel.app/)
 
-you can log in using the credentials below:
+You can log in using the credentials below:
 
 Email address: user@user.com
 Password: 12345678
@@ -47,19 +47,20 @@ This app uses the following libraries and features:
 
 ## Room for improvement
 
-Here are a few basic features and considerations that this app could benefit from. There are more features that would be great to have if this was a full featured bookings system but these are the most important ones:
+Here are a few basic features and considerations that this app could benefit from. There are more features that would be great to have if this was a full featured booking system, but these are the most important ones:
 
-1. Ability to add and edit bookings (they currently come from a fictional api)
-2. Ability to set minimum and maximun guest per cabin
-3. Ability to set minimum and maximum nights per cabin
-4. Ability to set discounts for each booking not only per cabin
-5. List of users with ability to delete users
-6. Add Mobile styling
-7. Improve accessibility
-8. Fix contextual menus loosing their position when a user scrolls down the page
+- Ability to add and edit bookings (they currently come from a fictional API)
+- Ability to set minimum and maximun guests per cabin
+- Ability to set minimum and maximum nights per cabin
+- Ability to set discounts for specific bookings
+- List of users
+- Create a super-admin user with priviledge to delete users
+- Add mobile styling
+- Improve accessibility
+- Fix bug in which contextual menus lose their position when a user scrolls down the page
 
 ## Context
 
-This is the final project for the ['The Ultimate React Course 2024: React, Redux & More'](https://www.udemy.com/course/the-ultimate-react-course/) by [Jonas Schmedtmann](https://codingheroes.io/) completed February 2024.
+This is the final project for ['The Ultimate React Course 2024: React, Redux & More'](https://www.udemy.com/course/the-ultimate-react-course/) by [Jonas Schmedtmann](https://codingheroes.io/) completed February 2024.
 
 I wrote the great majority of the React code for this app, always writing code before watching the taught content of the module. Some React components and boilerplate, as well as most of the styles for this project were provided by the course instructor [Jonas Schmedtmann](https://codingheroes.io/). The app is **not** styled for mobile, only desktop.
