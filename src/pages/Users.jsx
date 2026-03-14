@@ -1,5 +1,4 @@
 import SignupForm from '../features/authentication/SignupForm';
-import useUser from '../features/authentication/useUser';
 import Heading from '../ui/Heading';
 
 function Users() {
