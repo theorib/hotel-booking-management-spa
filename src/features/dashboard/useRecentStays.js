@@ -15,12 +15,13 @@ function useRecentStays() {
     data: stays,
     errorStays,
   } = useQuery({
+    // eslint-disable-next-line @tanstack/query/exhaustive-deps
     queryKey: ['stays', `last-${numDays}`],
     queryFn: () => getStaysAfterDate(queryDate),
   });
 
   const confirmedStays = stays?.filter(
-    stay => stay.status === 'checked-in' || stay.status === 'checked-out'
+    stay => stay.status === 'checked-in' || stay.status === 'checked-out',
   );
 
   return { isLoadingStays, stays, errorStays, confirmedStays, numDays };
