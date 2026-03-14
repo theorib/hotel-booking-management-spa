@@ -38,5 +38,8 @@
     "portfinder": "^1.0.38",
     "vite": "^8.0.0"
   },
+  "overrides": {
+    "minimatch": ">=3.1.4"
+  },
   "packageManager": "pnpm@10.12.4"
 }
